@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+}
+menu {
+    display: none;
+}
+.imagem {
+    background-color: yellow;
+    height: 30vh;
+    margin-bottom: 3vh;
+}
+.item {
+    display: flex;
+    background-color: blue;
+    height: 35vh;
+    margin-bottom: 5vh;
+}
+.foto {
+    background-color: purple;
+    width: 50%;
+    height: 100%;
+}
