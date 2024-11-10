@@ -13,8 +13,8 @@ html, body {
     padding: 0.5em;
 }
 input{
-    height: 5vh;
-    width: 70vw;
+    height: 3em;
+    width: 20em;
     border-radius: 10px;
 }
 menu {
