@@ -39,14 +39,64 @@ menu {
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: black 1px 1px 5px;
 }
-.item {
+.produtos {
+    background-color: gray;
+    height: 36vh;
+    padding: 5px;
     display: flex;
-    background-color: blue;
-    height: 35vh;
-    margin-bottom: 5vh;
+    overflow-x: auto;   
 }
-.foto {
+.caixa {
+    background-color: rgb(163, 68, 68);
+    height: 18rem;
+    display: flex;
+    overflow-x: auto;
+}
+.items {
+    background-color: darkgoldenrod;
+    max-height: 20rem;
+    min-width: 60vw;
+    margin-left: 1rem;
+    padding: 5px;
+}
+.imagem {
+    height: 20vh;
+}
+
+.outros {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0 5rem 20%
+}
+.controles {
+    background-image: url(https://images.tcdn.com.br/img/img_prod/1211726/controle_pro_nintendo_switch_49_1_a559603a277f8b1d82c61faa873e8e7b.png);
+    background-color: brown;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+.controles:hover {
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 0px 15px;
+}
+.jogos {
+    background-color: aqua;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+.jogos:hover {
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 0px 15px;
+}
+.perifericos{
     background-color: purple;
-    width: 50%;
-    height: 100%;
+    height: 15rem;
+    width: 15rem;
+    border-radius:50%;
+    margin-right: 3rem;
+}
+.perifericos:hover {
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 0px 15px;
 }
