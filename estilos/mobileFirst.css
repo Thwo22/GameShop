@@ -20,7 +20,7 @@ input{
 menu {
     display: none;
 }
-.imagem {
+.imagem-topo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +31,7 @@ menu {
     height: 30vh;
     margin-bottom: 3vh;
 }
-.imagem > h1, p {
+.imagem-topo > h1, p {
     text-align: center;
     color: white;
     padding:0;
@@ -39,28 +39,75 @@ menu {
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: black 1px 1px 5px;
 }
-.produtos {
-    background-color: gray;
-    height: 36vh;
-    padding: 5px;
-    display: flex;
-    overflow-x: auto;   
+.grupo1 {
+    background-color: rgb(235, 221, 36);
+    color: brown;
+    margin: 15px;
+    padding: 8px;
+    width: 130px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+}
+.grupo2 {
+    background: linear-gradient(to right,  rgb(20, 101, 167), rgb(13, 33, 49) );
+    margin: 15px;
+    padding: 8px;
+    width: 154px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+}
+.grupo3 {
+    background: linear-gradient(to right, rgb(9, 58, 9), green);
+    margin: 15px;
+    padding: 8px;
+    width: 154px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
 }
 .caixa {
-    background-color: rgb(163, 68, 68);
-    height: 18rem;
+    height: 22.6rem;
     display: flex;
     overflow-x: auto;
 }
 .items {
-    background-color: darkgoldenrod;
+    background-color: rgb(34, 34, 34);
     max-height: 20rem;
     min-width: 60vw;
     margin-left: 1rem;
     padding: 5px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+}
+.items:hover {
+    max-height: 21rem;
+    min-width: 63vw;
+    transition-duration: 0.2s;
 }
 .imagem {
+    background-color: white;
+    height: 150px;
+}
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: fixed;
+}
+.info {
     height: 20vh;
+    color: white;
+    text-align: center;
+}
+.info h1, p {
+    padding: 0;
+    margin: 10px;
+}
+.desconto {
+    color: brown;
+    text-decoration: line-through;
+    font-size: 19px;
+    padding: 0;
 }
 
 .outros {
