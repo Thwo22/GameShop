@@ -78,7 +78,7 @@ menu {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
 }
 .caixa {
-    height: 390px;
+    height: 300px;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
