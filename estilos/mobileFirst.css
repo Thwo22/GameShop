@@ -3,6 +3,8 @@
 html, body {
     margin:0;
     padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 27, 27);
 }
 
 .topo {
@@ -13,8 +15,8 @@ html, body {
     padding: 0.5em;
 }
 input{
-    height: 3em;
-    width: 20em;
+    height: 40px;
+    width: 70vw;
     border-radius: 10px;
 }
 menu {
@@ -28,7 +30,7 @@ menu {
 
     background: url(https://i.pinimg.com/originals/90/86/60/908660beec7a3f4711bef46d18aefbe6.gif) no-repeat center/cover;
 
-    height: 30vh;
+    height: 20vh;
     margin-bottom: 3vh;
 }
 .imagem-topo > h1, p {
@@ -43,7 +45,7 @@ menu {
     text-align: center;
     background-color: rgb(235, 221, 36);
     color: brown;
-    margin: 15px;
+    margin: 20px;
     padding: 2px;
     width: 50vw;
     border-radius: 8px;
@@ -73,7 +75,7 @@ menu {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
 }
 .caixa {
-    height: 22.6rem;
+    height: 23.6rem;
     display: flex;
     overflow-x: auto;
 }
@@ -82,8 +84,9 @@ menu {
     max-height: 20rem;
     min-width: 60vw;
     margin-left: 1rem;
+    margin-top: 1em;
     padding: 5px;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 15px black;
     border-radius: 5px;
 }
 .items:hover {
@@ -117,10 +120,11 @@ menu {
 }
 
 .outros {
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5rem 0 5rem 20%
+    margin: auto;
 }
 .controles {
     background-image: url(https://images.tcdn.com.br/img/img_prod/1211726/controle_pro_nintendo_switch_49_1_a559603a277f8b1d82c61faa873e8e7b.png);
@@ -131,7 +135,10 @@ menu {
     margin-bottom: 3rem;
 }
 .controles:hover {
-    box-shadow: rgba(0, 0, 0, 0.589) 0px 0px 15px;
+    box-shadow: rgba(0, 0, 0, 0.589) 5px 5px 25px;
+    height: 16rem;
+    width: 16rem;
+    transition-duration: 0.3s;
 }
 .jogos {
     background-color: aqua;
@@ -139,17 +146,23 @@ menu {
     width: 15rem;
     border-radius: 50%;
     margin-bottom: 3rem;
+    
 }
 .jogos:hover {
-    box-shadow: rgba(0, 0, 0, 0.589) 0px 0px 15px;
+    box-shadow: rgba(0, 0, 0, 0.589) 5px 5px 25px;
+    height: 16rem;
+    width: 16rem;
+    transition-duration: 0.3s;
 }
 .perifericos{
     background-color: purple;
     height: 15rem;
     width: 15rem;
     border-radius:50%;
-    margin-right: 3rem;
 }
 .perifericos:hover {
-    box-shadow: rgba(0, 0, 0, 0.589) 0px 0px 15px;
+    box-shadow: rgba(0, 0, 0, 0.589) 5px 5px 25px;
+    height: 16rem;
+    width: 16rem;
+    transition-duration: 0.3s;
 }
