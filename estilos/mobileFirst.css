@@ -40,29 +40,35 @@ menu {
     text-shadow: black 1px 1px 5px;
 }
 .grupo1 {
+    text-align: center;
     background-color: rgb(235, 221, 36);
     color: brown;
     margin: 15px;
-    padding: 8px;
-    width: 130px;
+    padding: 2px;
+    width: 50vw;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
 }
+.grupo1 h1,.grupo2 h1, .grupo3 h1 {
+    margin: 0;
+}
 .grupo2 {
+    text-align: center;
     background: linear-gradient(to right,  rgb(20, 101, 167), rgb(13, 33, 49) );
     margin: 15px;
-    padding: 8px;
-    width: 154px;
+    padding: 3px;
+    width: 50vw;
     border-radius: 8px;
     color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
 }
 .grupo3 {
-    background: linear-gradient(to right, rgb(9, 58, 9), green);
+    text-align: center;
+    background: linear-gradient(to right, rgb(8, 51, 8), green);
     margin: 15px;
-    padding: 8px;
-    width: 154px;
-    border-radius: 8px;
+    padding: 1px;
+    width: 50vw;
+    border-radius: 10px;
     color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
 }
