@@ -78,7 +78,7 @@ menu {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
 }
 .caixa {
-    height: 22.6rem;
+    height: 21.6rem;
     display: flex;
     overflow-x: auto;
     margin-bottom: 5rem;
@@ -89,7 +89,7 @@ menu {
     min-width: 55vw;
     margin: 1rem 0 0rem 1rem;
     padding: 5px;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.404);
     border-radius: 5px;
 }
 .items:hover {
