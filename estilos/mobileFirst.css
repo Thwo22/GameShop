@@ -78,14 +78,15 @@ menu {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
 }
 .caixa {
-    height: 320px;
+    height: 390px;
     display: flex;
     overflow-x: auto;
     margin-bottom: 5rem;
+    padding: 0;
 }
 .items {
     background-color: rgb(34, 34, 34);
-    max-height: 20rem;
+    max-height: 600px;
     min-width: 55vw;
     margin: 1rem 0 0rem 1rem;
     padding: 5px;
