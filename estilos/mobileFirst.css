@@ -87,12 +87,13 @@ menu {
 }
 .items {
     background-color: rgb(34, 34, 34);
-    max-height: 600px;
+    max-height: 100%;
     min-width: 55vw;
     margin-left: 1rem;
     padding: 5px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.404);
     border-radius: 5px;
+    height: 100%;
 }
 .items:hover {
     max-height: 20rem;
