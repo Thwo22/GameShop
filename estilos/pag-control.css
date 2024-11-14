@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+html, body {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 27, 27);
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    padding: 0.5em;
+}
+input{
+    height: 40px;
+    width: 70vw;
+    border-radius: 10px;
+}
+img.voltar, .carrinho {
+    margin: 5px;
+}
+
+.imagem-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: url(https://i.pinimg.com/originals/fa/32/1f/fa321f248442256a87a12ef31058d985.gif) no-repeat center/cover;
+
+    height: 25vh;
+    margin-bottom: 3vh;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+.caixa {
+    height: 350px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 5rem;
+    padding: 0;
+}
+.items {
+    background-color: rgb(34, 34, 34);
+    max-height: 100%;
+    min-width: 200px;
+    margin-left: 1rem;
+    padding: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.404);
+    border-radius: 5px;
+    height: 100%;
+}
+.items:hover {
+    min-width: 57vw;
+    transition-duration: 0.2s;
+}
