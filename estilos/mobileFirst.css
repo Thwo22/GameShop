@@ -78,7 +78,7 @@ menu {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
 }
 .caixa {
-    height: 300px;
+    height: 350px;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
@@ -96,7 +96,6 @@ menu {
     height: 100%;
 }
 .items:hover {
-    max-height: 20rem;
     min-width: 57vw;
     transition-duration: 0.2s;
 }
@@ -133,7 +132,7 @@ menu {
     margin: auto;
 }
 .controles {
-    background-image: url(https://images.tcdn.com.br/img/img_prod/1211726/controle_pro_nintendo_switch_49_1_a559603a277f8b1d82c61faa873e8e7b.png);
+    
     background-color: brown;
     height: 15rem;
     width: 15rem;
