@@ -96,7 +96,7 @@ menu {
     height: 100%;
 }
 .items:hover {
-    min-width: 57vw;
+    min-width: 210px;
     transition-duration: 0.2s;
 }
 .imagem {
