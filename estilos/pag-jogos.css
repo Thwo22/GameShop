@@ -60,7 +60,7 @@ img.menu, .carrinho {
 }
 .imagem {
     background-color: white;
-    height: 150px;
+    height: 200px;
 }
 .imagem img {
     width: 100%;
@@ -75,6 +75,17 @@ img.menu, .carrinho {
 .info h1, p {
     padding: 0;
     margin: 10px;
+}
+.vermais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: aliceblue;
+    min-width: 50px;
+    height:345px;
+    margin: 2px 0 2px 15px;
+    border-radius: 10px 0 0 10px;
 }
 .desconto {
     color: brown;
