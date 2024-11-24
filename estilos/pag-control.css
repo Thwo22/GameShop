@@ -117,3 +117,27 @@ img.voltar, .carrinho {
     color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
 }
+
+.final {
+    background-color: aliceblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    margin: 30px auto;
+    height: 30px;
+    width: 80px;
+    border-radius: 8px;
+}
+a {
+    text-decoration: none;
+}
+.final:hover {
+    border: 3px solid rgb(92, 92, 233);
+    color:  rgb(92, 92, 233);
+    font-weight: bolder;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.192);
+    text-decoration: none;
+}
