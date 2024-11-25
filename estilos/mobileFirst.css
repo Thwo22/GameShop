@@ -211,7 +211,7 @@ menu {
         background: url(https://i.pinimg.com/originals/8e/c6/f1/8ec6f1630c1f40394878290b96c74e6f.gif) no-repeat center/cover;
         height: 25vh;
     }
-    .imagem-topo > h1, p {
+     .topo-h1, .topo-p {
         font-size: 45px ;
         color: rgb(231, 231, 2);
     }
