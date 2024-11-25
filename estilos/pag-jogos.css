@@ -2,7 +2,7 @@
 
 
 .imagem-topo {
-    background: url(https://i.pinimg.com/originals/08/7b/fb/087bfb3a72c8f5af8a14c7b20352dafd.gif) no-repeat center/cover;
+    background: url(https://i.pinimg.com/originals/79/79/7a/79797a3ce4105a47e6fea25378f29cf8.gif) no-repeat center/cover;
 }
 .items {
     max-height: 100%;
@@ -11,12 +11,6 @@
 .items:hover {
     min-width: 210px;
     transition-duration: 0.2s;
-}
-.imagem {
-    height: 15vh;
-}
-.info {
-    height: 100%;
 }
 .vermais {
     display: flex;
