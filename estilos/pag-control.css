@@ -2,7 +2,7 @@
 
 
 .imagem-topo {
-    background: url(https://i.pinimg.com/originals/fa/32/1f/fa321f248442256a87a12ef31058d985.gif) no-repeat center/cover;
+    background: url(https://i.pinimg.com/originals/bb/ee/b2/bbeeb2ebbb138f8afa824e6e1c568973.gif) no-repeat top/cover;
 }
 
 .final {
@@ -20,6 +20,7 @@
 }
 a {
     text-decoration: none;
+
 }
 .final:hover {
     border: 3px solid rgb(92, 92, 233);

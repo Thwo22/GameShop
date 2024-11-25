@@ -2,7 +2,7 @@
 
 
 .imagem-topo {
-    background: url(https://i.pinimg.com/originals/41/60/61/416061b9d95e206d7bbeb51e644cca6e.gif) no-repeat center/cover;
+    background: url(https://i.pinimg.com/originals/08/7b/fb/087bfb3a72c8f5af8a14c7b20352dafd.gif) no-repeat center/cover;
 }
 .items {
     max-height: 100%;
@@ -31,9 +31,9 @@
 }
 
 .grupo1, .grupo2, .grupo3 {
-    padding: 15px;
-    width: 40vw;
-    margin: 1.9em auto;
+    padding: 10px;
+    width: 45vw;
+    margin: 1em auto;
 }
 
 .n, .p, .x {
