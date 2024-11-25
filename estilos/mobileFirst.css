@@ -25,6 +25,9 @@ img.menu, .carrinho {
 menu {
     display: none;
 }
+.logo {
+    display: none;
+}
 .imagem-topo {
     display: flex;
     flex-direction: column;
@@ -175,4 +178,68 @@ menu {
     height: 16rem;
     width: 16rem;
     transform: rotate(90deg)
+}
+
+/*TABLETS E DISPOSITIVOS MÉDIOS*/
+@media screen and (min-width: 768px) and (max-width: 1023PX){
+    .topo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(34, 34, 34);
+        padding: 0.6em;
+    }
+    input{
+        height: 45px;
+        width: 75vw;
+        border-radius: 10px;
+    }
+    .carrinho {
+        margin: 5px;
+    }
+    .logo {
+        display: block;
+        margin-left: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    menu {
+        display: none;
+    }
+    .imagem-topo {
+        background: url(https://i.pinimg.com/originals/8e/c6/f1/8ec6f1630c1f40394878290b96c74e6f.gif) no-repeat center/cover;
+        height: 25vh;
+    }
+    .imagem-topo > h1, p {
+        font-size: 45px ;
+        color: rgb(231, 231, 2);
+    }
+    .items{
+        max-height: 100%;
+        min-width: 250px;
+    }
+    .items:hover {
+        min-width: 260px;
+    }
+  
+    .outros {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .controles, .jogos, .perifericos {
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+        margin: 1rem;
+        margin-bottom: 3em;
+    }
+    .controles:hover, .jogos:hover, .perifericos:hover {
+        height: 13rem;
+        width: 13rem;
+    }
 }
