@@ -7,7 +7,14 @@
     --font-h1: "Outfit", sans-serif;
     --font-p: "Kaisei Decol", serif;
 }
-
+html, body {
+    background-color: rgb(20, 20, 20) ;
+}
+html, body {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 h1, #topo-h1 {
     font-family: var(--font-h1);
 }
@@ -26,12 +33,6 @@ p {
     font-size: 16px;
 }
 
-html, body {
-    margin:0;
-    padding:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(27, 27, 27);
-}
 
 .topo {
     display: flex;
@@ -207,6 +208,7 @@ menu {
 
 /*TABLETS E DISPOSITIVOS MÉDIOS*/
 @media screen and (min-width: 768px) and (max-width: 1023PX){
+
     .topo {
         display: flex;
         justify-content: space-between;
@@ -279,5 +281,92 @@ menu {
     .controles:hover, .jogos:hover, .perifericos:hover {
         height: 13rem;
         width: 13rem;
+    }
+    }
+
+    /*Desktops Pequenos*/
+    @media screen and (min-width:1024px)  {
+    
+    body {
+        background-image: linear-gradient(to bottom, rgb(27, 27, 27),  rgb(12, 12, 12));
+    }
+    .topo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(34, 34, 34);
+        padding: 0.6em;
+    }
+    input{
+        height: 45px;
+        width: 75vw;
+        border-radius: 10px;
+    }
+    .carrinho {
+        margin: 5px;
+    }
+    .logo {
+        display: block;
+        margin-left: 20px;
+        width: 52px;
+        height: 52px;
+    }
+    .menu{
+        display: none;
+    }
+    menu {
+        display: none;
+    }
+    .imagem-topo {
+        background: url(https://i.pinimg.com/originals/09/01/43/0901434384290893f3f67b1065855d60.gif) no-repeat center/cover;
+        height: 45vh;
+    }
+    
+    h1, #topo-h1 {
+        font-family: var(--font-h1);
+    }
+    #topo-h1 {
+        font-family: var(--font-h1);
+        font-size: 52px;
+        text-shadow: 3px 3px 5px black;
+    }
+    p {
+        font-family: var(--font-p);
+        font-weight: bolder;
+    }
+    #topo-p {
+        color: rgb(255, 255, 255);
+        font-size: 36px;
+    }
+    .grupo1,.grupo2, .grupo3 {
+        margin: 2em auto;
+        border-radius: 0 10px 0 10px;
+    }
+    .items{
+        max-height: 100%;
+        min-width: 250px;
+    }
+    .items:hover {
+        min-width: 260px;
+    }
+  
+    .outros {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .controles, .jogos, .perifericos {
+        height: 15rem;
+        width: 15rem;
+        border-radius: 50%;
+        margin: 1rem 4rem;
+        margin-bottom: 3em;
+    }
+    .controles:hover, .jogos:hover, .perifericos:hover {
+        height: 16rem;
+        width: 16rem;
     }
 }

@@ -13,10 +13,10 @@
     transition-duration: 0.2s;
 }
 .imagem {
-    height: 16vh;
+    height: 15vh;
 }
 .info {
-    height: 10vh;
+    height: 100%;
 }
 .vermais {
     display: flex;
@@ -38,10 +38,10 @@
 
 .n, .p, .x {
     background-color: rgb(90, 23, 153);
-    width: 80vw;
-    margin: 15px;
-    padding: 8px;
-    font-size: 33px;
+    margin: 30px auto;
+    width: 150px;
+    padding: 6px;
+    font-size: 23px;
     text-align: center;
     border-radius: 8px;
     
