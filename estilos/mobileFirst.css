@@ -286,7 +286,7 @@ menu {
     /*Desktops Pequenos*/
     @media screen and (min-width:1024px)  {
     
-    body {
+    body, html {
         background-image: linear-gradient(to bottom, rgb(27, 27, 27),  rgb(12, 12, 12));
     }
     .topo {

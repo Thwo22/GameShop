@@ -26,7 +26,7 @@
 
 .grupo1, .grupo2, .grupo3 {
     padding: 10px;
-    width: 45vw;
+    width: 47vw;
     margin: 1em auto;
 }
 
@@ -49,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 2rem auto;
     padding: 10px;
     height: 30px;
     width: 80px;
