@@ -7,10 +7,8 @@
     --font-h1: "Outfit", sans-serif;
     --font-p: "Kaisei Decol", serif;
 }
-html, body {
-    background-color: rgb(20, 20, 20) ;
-}
-html, body {
+html, body { 
+    background-color: rgb(20, 20, 20);
     margin:0;
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
@@ -71,6 +69,9 @@ menu {
     padding:0;
     margin: 0;
     text-shadow: black 1px 1px 5px;
+}
+.menu-inf {
+    display: none;
 }
 .grupo1 {
     text-align: center;
@@ -205,6 +206,18 @@ menu {
     transform: rotate(90deg)
 }
 
+.footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(34, 34, 34);
+
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-weight: lighter;
+}
+
 /*TABLETS E DISPOSITIVOS MÉDIOS*/
 @media screen and (min-width: 768px) and (max-width: 1023PX){
 
@@ -254,6 +267,7 @@ menu {
         color: yellow;
         font-size: 36px;
     }
+
     .items{
         max-height: 100%;
         min-width: 250px;
@@ -280,6 +294,18 @@ menu {
     .controles:hover, .jogos:hover, .perifericos:hover {
         height: 13rem;
         width: 13rem;
+    }
+
+    .footer {
+        margin: auto 5em;
+        height: 17vh;
+        border-radius: 10px 10px 0 0 ;
+        padding: 5px;
+    }
+    .footer img {
+        height: 5em;
+        width: 5em;
+        padding: 10px;
     }
     }
 
