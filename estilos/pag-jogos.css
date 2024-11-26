@@ -32,7 +32,7 @@
 
 .n, .p, .x {
     background-color: rgb(90, 23, 153);
-    margin: 30px auto;
+    margin-left: 0.8em;
     width: 150px;
     padding: 6px;
     font-size: 23px;
