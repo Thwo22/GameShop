@@ -13,6 +13,28 @@ html, body {
     --font-h1: "Roboto Condensed", sans-serif;
     --font-p: "Kaisei Decol", serif;
 }
+a {
+    position: relative;
+    text-decoration: none;
+    color:#000000;
+}
+/*animação de sublinhado nas navs*/
+a:after {
+    content: "";
+    position: absolute;
+    background-color:  #ffd700;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+a:hover:after {
+    width: 100%;
+    font-size: 17px;
+}
+
 h1 {
     font-family: var(--font-h1);
     font-size: 37px;
@@ -22,7 +44,7 @@ h1 {
 
 /*FONTE PARA PARÁGRAFOS GERAIS*/
 p {
-    font-family: var(--font-p);
+    font-family: var(--font-h1);
     font-weight: bolder;
 }
 
@@ -71,7 +93,25 @@ input{
     justify-content: center;
     background: url(https://i.pinimg.com/originals/9d/bd/9e/9dbd9e807e4d498b454d120c82086f43.gif) no-repeat bottom/cover;
     height: 25em;
-    margin-bottom: 3vh;
+}
+.custom-shape-divider-top-1747760079 {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1747760079 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 140px;
+}
+
+.custom-shape-divider-top-1747760079 .shape-fill {
+    fill: #241C44;
 }
 
 /*FONTE DENTRO DO GIF NO TOPO DO SITE*/
@@ -87,11 +127,18 @@ input{
 /*TARJA DA NINTENDO*/
 .grupo1 {
     background-color:brown;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /*TARJA DA PLAYSTATION*/
 .grupo2 {
     background: linear-gradient(to right,  rgb(20, 101, 167), rgb(13, 33, 49) );
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /*TARJA DA XBOX*/
@@ -101,17 +148,190 @@ input{
 
 /*CONFIGURAÇÕES EM COMUM ENTRE TODAS AS TARJAS*/
 .grupo1, .grupo2, .grupo3{
-    margin: 2em 0 0.5em 1.2em;
-    width: 15vw;
-    height: 6vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 2em 0 0 0;
+    width: 160px;
+    height: 40px;
     border-radius: 8px;
 }
 
 .grupo1 > h1, .grupo2 > h1, .grupo3 > h1 {
     text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 17px;
+    max-width: 100%;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.329)
+}
+
+/*CONTAINER DOS CONSOLES DA NINTENDO*/
+.caixa-nintendo, .caixa-playstation, .caixa-xbox {
+    background-color: rgb(14, 14, 14);
+    padding-top: 12em;
+    width: 80%;
+    gap:30px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    border: 2px #241c44 solid ;
+}
+
+/*ALTURA ADEQUADA PARA CADA CONTAINER DE SEÇÃO*/
+.caixa-nintendo {
+    height: 60em;
+    width: 80%;
+    gap:30px;
+    margin: auto;
+    background-color: rgb(14, 14, 14);
+}
+.caixa-playstation {
+    height: 40em;
+}
+.caixa-xbox {
+    height: 15em;
+}
+
+/*CAIXA DE TODOS OS PRODUTOS*/
+.items {
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    padding: 4px;
+    width: 8em;
+    height: 40vh;
+    box-shadow: 0px 0px 5px #241c44;
+    border: solid 2px#241c44;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*ANIMAÇÃO DAS CAIXAS DE PRODUTOS*/
+.items:hover {
+    width: 8.2em;
+    height: 41vh;
+    transition-duration: 0.2s;
+}
+
+/*CAIXA ONDE FICA A IMAGEM DO PRODUTO*/
+.imagem {
+    background-color: white;
+    height: 100px;
+}
+
+/*IMAGEM DENTRO DA CAIXA ACIMA*/
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: fixed;
+}
+
+/*DESCRIÇÃO DO PRODUTO, (ABAIXO DA IMAGEM)*/
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+/*Tamanho da fonte e configurações das letras da descrição dos produtos*/
+.info h1, p {
+    font-size: 18px;
+    padding: 10px;
+    margin: 1px;
+}
+/*Valor do Desconto em Vermelho na descrição*/
+.desconto {
+    color: brown;
+    text-decoration: line-through;
+    font-size: 12px;
+    padding: 0;
+}
+
+.convite{
+    padding-top: 3em;
+}
+
+/*Container onde estão os links para outras páginas do site */
+.outros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    margin: 2em 0 2em 0;
+}
+
+/*Configurações em comum entre todos as imagens que levam para outras páginas do site*/
+.controles, .jogos, .perifericos {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+
+/*Configurações individuais da imagem da página de controles*/
+.controles {
+    background: url(https://www.dashcontroles.com.br/wp-content/uploads/2021/07/Black.png)brown center/cover no-repeat padding-box content-box;
+}
+
+/*Configurações individuais da imagem da página de jogos*/
+.jogos {
+    background: url(https://i.pinimg.com/736x/0a/67/fd/0a67fdf4afbd3e7ea05e0462bce71b1a.jpg) center/cover no-repeat padding-box content-box;
+    transition: transform 2s ease;
+}
+
+/*Configurações individuais da imagem da página de periféricos*/
+.perifericos{
+    background: url(../imagens/volantewii.png) rgb(251, 255, 0) center/cover no-repeat;
+    transition: transform 2s ease;
+    
+}
+
+/*Configurações em comumnas animações de hover das imagens que levam para as outras páginas*/
+.controles:hover, .jogos:hover, .perifericos:hover {
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 0px 25px;
+    height: 6.5rem;
+    width: 6.5rem;
+    transition-duration: 0.3s;
+}
+
+/*Configurações individuais da animação hover da imagem de jogos*/
+.jogos:hover {
+    transform: rotate(360deg);
+}
+
+/*Configurações individuais da animação hover da imagem de periféricos*/
+.perifericos:hover {
+    transform: rotate(90deg)
+}
+
+/*rodapé do site*/
+.footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(34, 34, 34);
+
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-weight: lighter;
+}
+
+.semlistra {
+    all: unset;
+    cursor: pointer;
 }
 
 /*CELULARES*/
