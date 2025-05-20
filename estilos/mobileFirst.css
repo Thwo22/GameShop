@@ -2,36 +2,120 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+html, body { 
+    margin:0;
+    box-sizing: border-box;
+    background-color: rgb(20, 20, 20);
+    overflow-x: hidden;
+}
+/*FONTES PARA PARAGRAFOS E TÍTULOS*/
+:root {
+    --font-h1: "Roboto Condensed", sans-serif;
+    --font-p: "Kaisei Decol", serif;
+}
+h1 {
+    font-family: var(--font-h1);
+    font-size: 37px;
+    font-weight: 300;
+    text-shadow: 3px 3px 5px black;
+}
+
+/*FONTE PARA PARÁGRAFOS GERAIS*/
+p {
+    font-family: var(--font-p);
+    font-weight: bolder;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    padding: 0.5em;
+}
+
+.menu-android {
+    display: none;
+}
+
+.menu-desktop {
+    display: flex;
+    width: 350px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-desktop > nav, a {
+    color:white;
+    font-family: var(--font-h1);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/*BARRA DE PESQUISA*/
+input{
+    all: unset;
+    background-color: white;
+    height: 30px;
+    width: 25vw;
+    font-family: var(--font-h1);
+    padding-left: 5px;
+    border-radius: 3px;
+}
+
+/*GIF PRINCIPAL NO TOPO DO SITE*/
+.imagem-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(https://i.pinimg.com/originals/9d/bd/9e/9dbd9e807e4d498b454d120c82086f43.gif) no-repeat bottom/cover;
+    height: 25em;
+    margin-bottom: 3vh;
+}
+
+/*FONTE DENTRO DO GIF NO TOPO DO SITE*/
+.imagem-topo > h1, p{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    padding:0;
+    margin: 0;
+    text-shadow: black 1px 1px 5px;
+}
+
+/*TARJA DA NINTENDO*/
+.grupo1 {
+    background-color:brown;
+}
+
+/*TARJA DA PLAYSTATION*/
+.grupo2 {
+    background: linear-gradient(to right,  rgb(20, 101, 167), rgb(13, 33, 49) );
+}
+
+/*TARJA DA XBOX*/
+.grupo3 {
+    background: linear-gradient(to right, rgb(8, 51, 8), green);
+}
+
+/*CONFIGURAÇÕES EM COMUM ENTRE TODAS AS TARJAS*/
+.grupo1, .grupo2, .grupo3{
+    margin: 2em 0 0.5em 1.2em;
+    width: 15vw;
+    height: 6vh;
+    border-radius: 8px;
+}
+
+.grupo1 > h1, .grupo2 > h1, .grupo3 > h1 {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.329)
+}
+
 /*CELULARES*/
 @media (min-width: 300px) and (max-width: 455px){
-    /*FONTES PARA PARAGRAFOS E TÍTULOS*/
-    :root {
-        --font-h1: "Roboto Condensed", sans-serif;
-        --font-p: "Kaisei Decol", serif;
-    }
-
-    /*RESET DE PADRÕES GLOBAIS*/
-    html, body { 
-        margin:0;
-        box-sizing: border-box;
-        background-color: rgb(20, 20, 20);
-        overflow-x: hidden;
-    }
-
-    /*FONTE PARA TÍTULOS GERAIS*/
-    h1 {
-        font-family: var(--font-h1);
-        font-size: 37px;
-        font-weight: 300;
-        text-shadow: 3px 3px 5px black;
-    }
-
-    /*FONTE PARA PARÁGRAFOS GERAIS*/
-    p {
-        font-family: var(--font-p);
-        font-weight: bolder;
-        text-shadow: 3px 3px 10px black;
-    }
 
     /*FONTE PARA TÍTULOS GERAIS*/
     .topo {
@@ -168,71 +252,75 @@
         color: white;
         text-align: center;
     }
+    /*Tamanho da fonte e configurações das letras da descrição dos produtos*/
     .info h1, p {
         font-size: 18px;
         padding: 0;
         margin: 1px;
     }
+    /*Valor do Desconto em Vermelho na descrição*/
     .desconto {
         color: brown;
         text-decoration: line-through;
-        font-size: 10px;
+        font-size: 12px;
         padding: 0;
     }
-
+    
+    /*Container onde estão os links para outras páginas do site */
     .outros {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        margin: auto;
+        gap: 0.6em;
+        margin: 2em 0 2em 0;
     }
+    
+    /*Configurações em comum entre todos as imagens que levam para outras páginas do site*/
+    .controles, .jogos, .perifericos {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+    }
+    
+    /*Configurações individuais da imagem da página de controles*/
     .controles {
         background: url(https://www.dashcontroles.com.br/wp-content/uploads/2021/07/Black.png)brown center/cover no-repeat padding-box content-box;
-        height: 15rem;
-        width: 15rem;
-        border-radius: 50%;
-        margin-bottom: 3rem;
     }
-    .controles:hover {
-        box-shadow: rgba(0, 0, 0, 0.589) 5px 5px 25px;
-        background-size: 200px;
-        height: 16rem;
-        width: 16rem;
-        transition-duration: 0.3s;
-    }
+    
+    /*Configurações individuais da imagem da página de jogos*/
     .jogos {
         background: url(https://i.pinimg.com/736x/0a/67/fd/0a67fdf4afbd3e7ea05e0462bce71b1a.jpg) center/cover no-repeat padding-box content-box;
-        height: 15rem;
-        width: 15rem;
-        border-radius: 50%;
-        margin-bottom: 3rem;
         transition: transform 2s ease;
     }
-    .jogos:hover {
-        box-shadow: rgba(0, 0, 0, 0.589) 5px 5px 25px;
-        transform: rotate(360deg);
-        height: 16rem;
-        width: 16rem;
-        
-    }
+    
+    /*Configurações individuais da imagem da página de periféricos*/
     .perifericos{
         background: url(../imagens/volantewii.png) rgb(251, 255, 0) center/cover no-repeat;
-        height: 15rem;
-        width: 15rem;
-        border-radius:50%;
-        margin-bottom: 5rem;
         transition: transform 2s ease;
         
     }
+
+    /*Configurações em comumnas animações de hover das imagens que levam para as outras páginas*/
+    .controles:hover, .jogos:hover, .perifericos:hover {
+        box-shadow: rgba(0, 0, 0, 0.589) 0px 0px 25px;
+        height: 6.5rem;
+        width: 6.5rem;
+        transition-duration: 0.3s;
+    }
+
+    /*Configurações individuais da animação hover da imagem de jogos*/
+    .jogos:hover {
+        transform: rotate(360deg);
+    }
+
+    /*Configurações individuais da animação hover da imagem de periféricos*/
     .perifericos:hover {
-        box-shadow: rgba(0, 0, 0, 0.589) 5px 5px 25px;
-        background-size: 250px;
-        height: 16rem;
-        width: 16rem;
         transform: rotate(90deg)
     }
 
+    /*rodapé do site*/
     .footer {
         display: block;
         justify-content: center;
@@ -247,179 +335,212 @@
 }
 
 /*TABLETS E DISPOSITIVOS MÉDIOS*/
-@media screen and (min-width: 768px) and (max-width: 1023PX){
+@media screen and (min-width: 456px) and (max-width: 660px){
 
-    .topo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgb(34, 34, 34);
-        padding: 0.6em;
-    }
+    /*BARRA DE PESQUISA*/
     input{
-        height: 45px;
-        width: 75vw;
-        border-radius: 10px;
+        all: unset;
+        background-color: white;
+        height: 35px;
+        width: 60vw;
+        font-family: var(--font-h1);
+        padding-left: 5px;
+        border-radius: 3px;
     }
-    .carrinho {
-        margin: 5px;
-    }
+
+    /*LOGO-ESTRELA DESATIVADO NO CELULAR*/
     .logo {
-        display: block;
-        margin-left: 20px;
-    }
-    .menu{
         display: none;
     }
-    menu {
-        display: none;
-    }
+
+    /*GIF PRINCIPAL NO TOPO DO SITE*/
     .imagem-topo {
-        background: url(https://i.pinimg.com/originals/8e/c6/f1/8ec6f1630c1f40394878290b96c74e6f.gif) no-repeat center/cover;
-        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url(https://i.pinimg.com/originals/9d/bd/9e/9dbd9e807e4d498b454d120c82086f43.gif) no-repeat center/cover;
+        height: 30vh;
+        margin-bottom: 3vh;
+    }
+
+    /*FONTE DENTRO DO GIF NO TOPO DO SITE*/
+    .imagem-topo > h1, p {
+        text-align: center;
+        color: white;
+        padding:0;
+        margin: 0;
+        text-shadow: black 1px 1px 5px;
+    }
+
+    /*TARJA DA NINTENDO*/
+    .grupo1 {
+        background-color:brown;
+    }
+
+    /*TARJA DA PLAYSTATION*/
+    .grupo2 {
+        background: linear-gradient(to right,  rgb(20, 101, 167), rgb(13, 33, 49) );
+    }
+
+    /*TARJA DA XBOX*/
+    .grupo3 {
+        background: linear-gradient(to right, rgb(8, 51, 8), green);
+    }
+
+    /*CONFIGURAÇÕES EM COMUM ENTRE TODAS AS TARJAS*/
+    .grupo1, .grupo2, .grupo3{
+        margin: 2em 0 0.5em 1.2em;
+        width: 35vw;
+        height: 4.5vh;
+        border-radius: 8px;
     }
     
-    h1, #topo-h1 {
-        font-family: var(--font-h1);
+    .grupo1 > h1, .grupo2 > h1, .grupo3 > h1 {
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.329)
     }
-    #topo-h1 {
-        font-family: var(--font-h1);
-        font-size: 52px;
-        text-shadow: 3px 3px 5px black;
+    
+    /*CONTAINER DOS CONSOLES DA NINTENDO*/
+    .caixa-nintendo, .caixa-playstation, .caixa-xbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
     }
-    p {
-        font-family: var(--font-p);
-        font-weight: bolder;
+    
+    /*ALTURA ADEQUADA PARA CADA CON*/
+    .caixa-nintendo {
+        height: 75em;
     }
-    #topo-p {
-        color: yellow;
-        font-size: 36px;
+    .caixa-playstation {
+        height: 45em;
+    }
+    .caixa-xbox {
+        height: 30em;
     }
 
-    .items{
-        max-height: 100%;
-        min-width: 250px;
+    /*CAIXA DE TODOS OS PRODUTOS*/
+    .items {
+        background-color: #1f1f1f;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: auto;
+        padding: 4px;
+        width: 8em;
+        height: 40vh;
+        box-shadow: 0px 0px 5px rgb(53, 17, 53);
+        border: solid 2px rgb(53, 17, 53);
+        border-radius: 8px;
     }
+    /*ANIMAÇÃO DAS CAIXAS DE PRODUTOS*/
     .items:hover {
-        min-width: 260px;
+        width: 9em;
+        height: 41vh;
+        transition-duration: 0.2s;
     }
-  
+    /*CAIXA ONDE FICA A IMAGEM DO PRODUTO*/
+    .imagem {
+        background-color: white;
+        height: 100px;
+    }
+    /*IMAGEM DENTRO DA CAIXA ACIMA*/
+    .imagem img {
+        width: 100%;
+        height: 100%;
+        object-fit: fixed;
+    }
+    /*DESCRIÇÃO DO PRODUTO, (ABAIXO DA IMAGEM)*/
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        color: white;
+        text-align: center;
+    }
+    /*Tamanho da fonte e configurações das letras da descrição dos produtos*/
+    .info h1, p {
+        font-size: 18px;
+        padding: 0;
+        margin: 1px;
+    }
+    /*Valor do Desconto em Vermelho na descrição*/
+    .desconto {
+        color: brown;
+        text-decoration: line-through;
+        font-size: 12px;
+        padding: 0;
+    }
+    
+    /*Container onde estão os links para outras páginas do site */
     .outros {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        margin: auto;
+        gap: 0.6em;
+        margin: 2em 0 2em 0;
     }
-
+    
+    /*Configurações em comum entre todos as imagens que levam para outras páginas do site*/
     .controles, .jogos, .perifericos {
-        height: 12rem;
-        width: 12rem;
+        height: 6rem;
+        width: 6rem;
         border-radius: 50%;
-        margin: 1rem;
-        margin-bottom: 3em;
     }
-    .controles:hover, .jogos:hover, .perifericos:hover {
-        height: 13rem;
-        width: 13rem;
+    
+    /*Configurações individuais da imagem da página de controles*/
+    .controles {
+        background: url(https://www.dashcontroles.com.br/wp-content/uploads/2021/07/Black.png)brown center/cover no-repeat padding-box content-box;
+    }
+    
+    /*Configurações individuais da imagem da página de jogos*/
+    .jogos {
+        background: url(https://i.pinimg.com/736x/0a/67/fd/0a67fdf4afbd3e7ea05e0462bce71b1a.jpg) center/cover no-repeat padding-box content-box;
+        transition: transform 2s ease;
+    }
+    
+    /*Configurações individuais da imagem da página de periféricos*/
+    .perifericos{
+        background: url(../imagens/volantewii.png) rgb(251, 255, 0) center/cover no-repeat;
+        transition: transform 2s ease;
+        
     }
 
+    /*Configurações em comumnas animações de hover das imagens que levam para as outras páginas*/
+    .controles:hover, .jogos:hover, .perifericos:hover {
+        box-shadow: rgba(0, 0, 0, 0.589) 0px 0px 25px;
+        height: 6.5rem;
+        width: 6.5rem;
+        transition-duration: 0.3s;
+    }
+
+    /*Configurações individuais da animação hover da imagem de jogos*/
+    .jogos:hover {
+        transform: rotate(360deg);
+    }
+
+    /*Configurações individuais da animação hover da imagem de periféricos*/
+    .perifericos:hover {
+        transform: rotate(90deg)
+    }
+
+    /*rodapé do site*/
     .footer {
-        margin: auto 5em;
-        height: 17vh;
-        border-radius: 10px 10px 0 0 ;
-        padding: 5px;
-    }
-    .footer img {
-        height: 5em;
-        width: 5em;
-        padding: 10px;
-    }
-    }
-
-    /*Desktops Pequenos*/
-    @media screen and (min-width:1024px)  {
-    
-    body, html {
-        background-image: linear-gradient(to bottom, rgb(27, 27, 27),  rgb(12, 12, 12));
-    }
-    .topo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgb(34, 34, 34);
-        padding: 0.6em;
-    }
-    input{
-        height: 45px;
-        width: 75vw;
-        border-radius: 10px;
-    }
-    .carrinho {
-        margin: 5px;
-    }
-    .logo {
         display: block;
-        margin-left: 20px;
-        width: 52px;
-        height: 52px;
-    }
-    .menu{
-        display: none;
-    }
-    menu {
-        display: none;
-    }
-    .imagem-topo {
-        background: url(https://i.pinimg.com/originals/09/01/43/0901434384290893f3f67b1065855d60.gif) no-repeat center/cover;
-        height: 45vh;
-    }
-    
-    h1, #topo-h1 {
-        font-family: var(--font-h1);
-    }
-    #topo-h1 {
-        font-family: var(--font-h1);
-        font-size: 52px;
-        text-shadow: 3px 3px 5px black;
-    }
-    p {
-        font-family: var(--font-p);
-        font-weight: bolder;
-    }
-    #topo-p {
-        color: rgb(255, 255, 255);
-        font-size: 36px;
-    }
-    .grupo1,.grupo2, .grupo3 {
-        margin: 2em auto;
-        border-radius: 0 10px 0 10px;
-    }
-    .items{
-        max-height: 100%;
-        min-width: 250px;
-    }
-    .items:hover {
-        min-width: 260px;
-    }
-
-    .outros {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         justify-content: center;
-        margin: auto;
-    }
+        align-items: center;
+        background-color:  rgb(34, 34, 34);
 
-    .controles, .jogos, .perifericos {
-        height: 15rem;
-        width: 15rem;
-        border-radius: 50%;
-        margin: 1rem 4rem;
-        margin-bottom: 3em;
-    }
-    .controles:hover, .jogos:hover, .perifericos:hover {
-        height: 16rem;
-        width: 16rem;
+        text-align: center;
+        padding: 5px;
+        color: white;
+        font-weight: lighter;
     }
 }
