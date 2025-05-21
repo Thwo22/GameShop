@@ -68,7 +68,7 @@
     /*CAIXA DE TODOS OS PRODUTOS*/
     .items {
         width: 7em;
-        height: 35vh;
+        height: 200px;
     }
 
     /*CONTAINER DOS CONSOLES EM GERAL*/
@@ -81,13 +81,13 @@
 
     /*ALTURA ADEQUADA PARA CADA CONTAINER DE SEÇÃO*/
     .caixa-nintendo {
-    padding: 10em 0 5em 0;
+    padding: 15em 0 10em 0;
     }
     .caixa-playstation {
-    padding: 6em 0 3em 0;
+    padding: 9em 0 6em 0;
     }
     .caixa-xbox {
-    padding: 12em 0 8em 0;
+    padding: 14em 0 10em 0;
     }
 
     /*Tamanho da fonte e configurações das letras da descrição dos produtos*/
@@ -180,7 +180,7 @@
     /*CAIXA DE TODOS OS PRODUTOS*/
     .items {
         width: 7em;
-        height: 35vh;
+        height: 200px;
     }
 
     /*CONTAINER DOS CONSOLES EM GERAL*/
@@ -193,13 +193,13 @@
 
     /*ALTURA ADEQUADA PARA CADA CONTAINER DE SEÇÃO*/
     .caixa-nintendo {
-    padding: 10em 0 5em 0;
+    padding: 15em 0 10em 0;
     }
     .caixa-playstation {
-    padding: 6em 0 3em 0;
+    padding: 9em 0 6em 0;
     }
     .caixa-xbox {
-    padding: 12em 0 8em 0;
+    padding: 14em 0 9em 0;
     }
 
     /*Tamanho da fonte e configurações das letras da descrição dos produtos*/
@@ -269,7 +269,7 @@
     /*CAIXA DE TODOS OS PRODUTOS*/
     .items {
         width: 7em;
-        height: 35vh;
+        height: 200px;
     }
 
     /*CONTAINER DOS CONSOLES EM GERAL*/
