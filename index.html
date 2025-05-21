@@ -19,15 +19,21 @@
         <input type="search" name="busca" id="ibusca" placeholder="Pesquisar">
 
         <div class="menu-desktop">
-          <nav><a href="paginas/pag-control.html">Controles</a></nav>
+          <nav><a href="#">Controles</a></nav>
       
-          <nav><a href="paginas/pag-jogos.html">Jogos</a></nav>
+          <nav><a href="#">Jogos</a></nav>
 
-          <nav><a href="paginas/pag-acessorios.html">Periféricos</a></nav>
+          <nav><a href="#">Periféricos</a></nav>
         </div>
 
-        <button id="carrinho-botao"><img class="carrinho"  src="https://img.icons8.com/material-rounded/38/FFFFFF/shopping-cart-loaded.png" alt="carrinho"></button>
+        <div class="compras">
+          <button id="carrinho-botao">
+            <img class="carrinho"  src="https://img.icons8.com/material-rounded/38/FFFFFF/shopping-cart-loaded.png" alt="carrinho">
+            <span class="numero-compras">0</span>
+          </button>
+        </div>
       </div>
+
     </header>
 
     <!--BANNER PRINCIPAL DO SITE COM TÍTULO DE BOAS VINDAS DENTRO-->
@@ -57,14 +63,16 @@
         <div class="info"><h1>Nintendo 64</h1>
         <p class="desconto">R$450</p>
         <h1>R$399</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
       
       <!--SUPER NINTENDO-->
       <div class="items">
         <div class="imagem"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/SNES-USA.png" alt="SUPER NINTENDO"></div>
-        <div class="info"><h1> Super Nintendo</h1>
+        <div class="info"><h1> S. Nintendo</h1>
         <p class="desconto">R$1300</p> 
         <h1>R$800</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
       
       <!--NINTENDO CLÁSSICO-->
@@ -72,42 +80,49 @@
         <div class="imagem"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/NES-Console-Set.png" alt="NINTENDO CLÁSSICO"></div>
         <div class="info"><h1>Nintendo classico</h1> 
         <p class="desconto">R$1500</p> <h1>R$500</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
       
       <!--NINTENDO 3DS-->
       <div class="items">
         <div class="imagem"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nintendo-3DS-AquaOpen.png/1132px-Nintendo-3DS-AquaOpen.png" alt="NINTENDO 3DS"></div>
         <div class="info"><h1>Nintendo 3ds</h1><p class="desconto">R$400</p> <h1>R$300</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
       
       <!--NINTENDO 3DS XL-->
       <div class="items">
         <div class="imagem"><img src="https://www.nintendo.com/eu/media/images/01_website_elements/hardware_1/hardware_2015_NewNintendo3DSXL_Black.png" alt="NINTENDO 3DS XL"></div>
-        <div class="info"><h1>Nintendo 3ds XL</h1><p class="desconto">R$500</p> <h1>R$350</h1></div>
+        <div class="info"><h1>Nintendo XL</h1><p class="desconto">R$500</p> <h1>R$350</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
       
       <!--NINTENDO WII-->
       <div class="items">
         <div class="imagem"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Wii-Console.png" alt="NINTENDO WII"></div>
         <div class="info"><h1>Nintendo Wii</h1><p class="desconto">R$800</p> <h1>R$500</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
       
       <!--GAME CUBE-->
       <div class="items">
         <div class="imagem"><img src="https://surl.li/zinhaz" alt="GAME CUBE"></div>
         <div class="info"><h1>Game Cube</h1><p class="desconto">R$450</p> <h1>R$400</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
       
       <!--GAME BOY COLOR-->
       <div class="items">
         <div class="imagem"><img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Game_Boy_Color_%28green%29.png" alt="GAME BOY COLOR"></div>
-        <div class="info"><h1>Game Boy Color</h1><p class="desconto">R$600</p> <h1>R$500</h1></div>
+        <div class="info"><h1>Game B. Color</h1><p class="desconto">R$600</p> <h1>R$500</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
       
       <!--GAME BOY ADVENCED-->
       <div class="items">
         <div class="imagem"><img src="https://surli.cc/phczzp" alt="GAME BOY ADVENCED"></div>
         <div class="info"><h1>Game Boy Advanced</h1><p class="desconto">R$500</p> <h1>R$200</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
 
       <!--FIM DA SEÇÃO NINTENDO-->
@@ -126,36 +141,42 @@
       <div class="items">
         <div class="imagem"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/PSX-Console-wController.png/1280px-PSX-Console-wController.png" alt="Playstation 1"></div>
         <div class="info"><h1>Playstation 1</h1><p class="desconto">R$500</p> <h1>R$300</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
 
       <!--PLAYSATION 2-->
       <div class="items">
         <div class="imagem"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PS2-Versions.png/640px-PS2-Versions.png" alt="Playstation 2"></div>
         <div class="info"><h1>Playstation 2</h1><p class="desconto">R$600</p> <h1>R$400</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
       
       <!--PLAYSTATION PORTABLE-->
       <div class="items">
         <div class="imagem"><img src="https://www.freeiconspng.com/thumbs/psp-icon/psp-icon-5.png" alt="Playstation Portable"></div>
         <div class="info"><h1>Playstation Portable</h1><p class="desconto">R$300</p> <h1>R$200</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
 
       <!--PLASTATIOM VITA-->
       <div class="items">
         <div class="imagem"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/PlayStation-Vita-1101-FL.png/2560px-PlayStation-Vita-1101-FL.png" alt="Playstation Vita"></div>
         <div class="info"><h1>Playstation Vita</h1><p class="desconto">R$350</p> <h1>R$300</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
       
       <!--PLAYSTATION PORTABLE GO-->
       <div class="items">
         <div class="imagem"><img src="https://i.pinimg.com/736x/24/4e/c1/244ec1f0c00d47db798d5eb31ee699a5.jpg" alt="Playstation Portable Go"></div>
-        <div class="info"><h1>Playstation Portable Go</h1><p class="desconto">R$350</p> <h1>R$200</h1></div>
+        <div class="info"><h1>Playstation P G</h1><p class="desconto">R$350</p> <h1>R$200</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
       
       <!--PLAYSTATION 3-->
       <div class="items">
         <div class="imagem"><img src="https://cdn.consolevariations.com/taxonomies/2/S%20-%20PS3.png" alt="Playstation 3"></div>
         <div class="info"><h1>Playstation 3</h1><p class="desconto">R$800</p> <h1>R$500</h1></div>
+        <button id="add-carrinho">Adicionar ao carrinho</button>
       </div>
     
       <!--FIM DA SEÇÃO PLAYSTATION-->
@@ -173,18 +194,21 @@
         <div class="items">
           <div class="imagem"><img src="https://cdn.awsli.com.br/600x450/514/514917/produto/198543931/xbox-classico-13eca6f857.jpg" alt="Xbox Clássico"></div>
           <div class="info"><h1>Xbox Clássico</h1><p class="desconto">R$300</p> <h1>R$200</h1></div>
+          <button id="add-carrinho">Adicionar ao carrinho</button>
         </div>
         
         <!--XBOX 360-->
         <div class="items">
           <div class="imagem"><img src="https://i.pinimg.com/736x/db/52/5b/db525bc4780804ffa0c1d88a11ec5e32.jpg" alt="Xbox 360"></div>
           <div class="info"><h1>Xbox 360</h1><p class="desconto">R$400</p> <h1>R$350</h1></div>
+          <button id="add-carrinho">Adicionar ao carrinho</button>
         </div>
         
         <!--XBOX 360 SLIM-->
         <div class="items">
           <div class="imagem"><img src="https://i.pinimg.com/736x/05/48/9f/05489f4ba58ed9f1441c856afa210989.jpg" alt="Xbox 360 Slim"></div>
           <div class="info"><h1>Xbox 360 Slim</h1><p class="desconto">R$599</p> <h1>R$490</h1></div>
+          <button id="add-carrinho">Adicionar ao carrinho</button>
         </div>
       
       <!--FIM DA SEÇÃO XBOX-->
@@ -193,17 +217,17 @@
       <!--LINKS PARA OUTRAS PÁGINAS DE SEÇÕES-->
       <div class="outros">
 
-        <a href="paginas/pag-control.html" target="_self" class="semlistra">
+        <a href="#" class="semlistra">
           <p>Controles</p>
           <div class="controles"></div>
         </a>
 
-        <a href="paginas/pag-jogos.html" class="semlistra">
+        <a href="#" class="semlistra">
           <p>Jogos</p>
           <div class="jogos"></div>
         </a>
 
-        <a href="paginas/pag-acessorios.html" class="semlistra">
+        <a href="#" class="semlistra">
           <p>Periféricos</p>
           <Div class="perifericos"></Div>
         </a>
@@ -220,5 +244,6 @@
         <a href="https://github.com/Thwo22" target="_blank"><img width="48" height="48" src="https://img.icons8.com/ios-filled/48/github.png" alt="github"/></a>
       </div>
     </footer>
+    <script src="scriip.js"></script>
 </body>
 </html>

@@ -52,7 +52,7 @@ p {
     padding: 0.5em;
 }
 
-.menu-android {
+button#menu-android {
     display: none;
 }
 
@@ -80,6 +80,51 @@ input{
     padding-left: 5px;
     border-radius: 3px;
 }
+
+#carrinho-botao > .carrinho{
+        width: 22px;
+        height: 22px;
+    }
+
+    #carrinho-botao {
+        all: unset;
+        cursor: pointer;
+    }
+
+    .compras {
+        position: absolute;
+        top: 2%;
+        left: 90%;
+        display: flex;
+    }
+    .numero-compras {
+        position: relative;
+        top: -30%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        background-color: brown;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+
+    #add-carrinho {
+        all: unset;
+        margin: auto;
+        background-color: brown;
+        font-family: var(--font-h1);
+        text-align: center;
+        color: white;
+        font-size: 13px;
+        padding: 1px;
+        width: 100px;
+        height: 35px;
+        border-radius: 8px;
+    }
 
 /*GIF PRINCIPAL NO TOPO DO SITE*/
 .imagem-topo {
@@ -201,7 +246,7 @@ input{
     justify-content: flex-start;
     margin: auto;
     padding: 4px;
-    width: 8em;
+    width: 9em;
     height: 40vh;
     box-shadow: 0px 0px 5px #241c44;
     border: solid 2px#241c44;
@@ -211,7 +256,7 @@ input{
 
 /*ANIMAÇÃO DAS CAIXAS DE PRODUTOS*/
 .items:hover {
-    width: 8.2em;
+    width: 9.2em;
     height: 41vh;
     transition-duration: 0.2s;
 }

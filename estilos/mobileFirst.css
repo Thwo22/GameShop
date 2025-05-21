@@ -17,6 +17,12 @@
         height: 22px;
     }
 
+    button#menu-android {
+    all: unset;
+    display: flex;
+    cursor: pointer;
+    }
+
     #menu-android, #carrinho-botao {
         all: unset;
         cursor: pointer;
@@ -129,6 +135,12 @@
         align-items: center;
     }
 
+    button#menu-android {
+    all: unset;
+    display: flex;
+    cursor: pointer;
+    }
+
     /*BARRA DE PESQUISA*/
     input{
         all: unset;
@@ -234,8 +246,10 @@
         display: none;
     }
 
-    .menu-android{
-        display: flex;
+    button#menu-android {
+    all: unset;
+    display: flex;
+    cursor: pointer;
     }
 
     /*GIF PRINCIPAL NO TOPO DO SITE*/
